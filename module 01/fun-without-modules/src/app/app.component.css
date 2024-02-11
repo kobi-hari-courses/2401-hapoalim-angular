@@ -1,0 +1,28 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+
+    max-width: 200px;
+    max-height: 200px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgreen;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: lightgreen;
+    padding: 4px 10px;
+    color: black;
+}
+
+nav a.here {
+    background-color: darkgreen;
+    color: lightgreen;
+}
