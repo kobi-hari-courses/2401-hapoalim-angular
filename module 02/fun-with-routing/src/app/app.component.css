@@ -1,0 +1,17 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: lightgreen;
+    padding: 8px;
+}
+
+a.here {
+    background-color: darkgreen;
+    color: lightgreen;
+}
