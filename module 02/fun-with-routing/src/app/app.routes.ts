@@ -12,14 +12,18 @@ export const routes: Routes = [
   },
   { path: 'b', component: BComponent },
   {
-    path: 'c',
+    path: 'c/:id',
     component: CComponent,
     providers: [
       {
         provide: ENVIRONMENT_INITIALIZER,
         useValue: () => console.log('Hey, I am visiting C for the first time'),
-        multi: true
+        multi: true,
       },
     ],
+  },
+  {
+    path: 'signals',
+    loadComponent: () => import('./pages/signals-demo/signals-demo.component'),
   },
 ];
